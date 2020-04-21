@@ -56,7 +56,7 @@ class RandomForestEvaluation:
         print('Mean Absolute Error:', round(np.mean(errors), 2), 'degrees.')
 
         # Calculate mean absolute percentage error (MAPE)
-        mape = 100 * Paid_rate_division(errors, test_labels.all())
+        mape = 100 * round(np.mean(errors), 2)
 
         # Calculate and display accuracy
         accuracy = 100 - np.mean(mape)
